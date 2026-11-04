@@ -1208,3 +1208,16 @@ for one run.
 
 Call `.showHelpAfterError()` on the program, or pass your own hint, such as
 `.showHelpAfterError('(run with --help for every option)')`.
+
+<!-- answers added in agent run 20261104-140425 -->
+
+### Which wins when an option is set on the command line and in the environment?
+
+The command line. An option bound to an environment variable with `.env()` takes the variable's value only
+when the option was not given on the command line, so a person can always override a container's settings
+for one run.
+
+### How do I show help after an error?
+
+Call `.showHelpAfterError()` on the program, or pass your own hint, such as
+`.showHelpAfterError('(run with --help for every option)')`.
